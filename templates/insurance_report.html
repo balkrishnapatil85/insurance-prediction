@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance prediction</title>
+</head>
+
+<Body background="static\report.jpg"></Body>
+ 
+
+
+<body>
+    <center>
+        <h1 style='color:rgb(170, 236, 17)'>Insurance predicted: </h1>
+        
+        <h2 style='color:rgb(33, 242, 179)'>
+            <ul>
+                {% if data>0 %}
+
+                <tr>
+                    <td> {{ data }} </td>
+                </tr>
+                
+                {% endif %}
+            </ul>
+
+        </h2>
+
+    </center>
+
+</body>
+</html>

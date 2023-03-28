@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Insurance Prediction</title>
+</head>
+
+<Body background="static\abc.jpg"></Body>
+ 
+ 
+
+
+<body>
+    <center>
+
+        <h1>Insurance Prediction</h1>
+        {% if result %}
+        <p>{{ result }}</p>
+        {% endif %}
+    
+        <form method="POST" action="/predict">
+            <label> 'age' </label><br>
+            <input type="text"name= 'age' ><br><br>
+            <label> 'sex' </label><br>
+            <input type="text"name= 'sex' ><br><br>
+            <label> 'bmi' </label><br>
+            <input type="text"name= 'bmi' ><br><br>
+            <label> 'children' </label><br>
+            <input type="text"name= 'children' ><br><br>
+            <label> 'smoker' </label><br>
+            <input type="text"name= 'smoker' ><br><br>
+            <label> 'region' </label><br>
+            <input type="text"name= 'region' ><br><br>
+
+
+            <input type="submit" value="Predict"><br><br>
+        </form>
+    </center>
+
+</body>
+</html>
