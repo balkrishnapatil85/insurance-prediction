@@ -27,4 +27,4 @@ def predict():
         #return "<h1 style='color:red'>Wine Quality is BAD</h1>"
          #return render_template('churn_no.html',prediction_text='Costomer churn prediction : No churn')
 
-app.run(debug=True,port=5000)
+#app.run(debug=True,port=5000)
